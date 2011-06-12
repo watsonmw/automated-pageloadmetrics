@@ -95,4 +95,4 @@ Windows:
 
   7-bandwidth.py - Example of setting the proxy bandwidth limit
 
-  8-upload.py    - Upload har, screenshot and error message to harpoon
+  8-upload.py    - Upload har, screenshot and error message to Harpoon

@@ -1,4 +1,4 @@
---------------------------------------------
+-------------------------------------------
 Performance metrics gathering using Selenium
 --------------------------------------------
 
@@ -18,8 +18,8 @@ The Java examples load the browsermob-proxy jar and call its functions directly.
 Python Examples
 ---------------
 
-Located under the java directory.
+Located under the python directory.
 
-The Python and CSharp examples interface with the browsermob-proxy via a REST API.  The browsermob-proxy should be ran in server mode.  You can do this as follows:
+The Python examples interface with the browsermob-proxy via a REST API.  The browsermob-proxy should be ran in server mode.  Details of how to do this can be found in python/README.
 
 
