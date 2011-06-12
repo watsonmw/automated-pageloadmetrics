@@ -1,0 +1,55 @@
+=======
+Install
+=======
+
+- Install Java SDK 1.6
+
+- All library/jars used in the examples are included in the 'jars' directory.
+
+- The examples can be ran from 'runtest.sh' on Unix and 'runtest.bat' on
+  Windows.
+
+NOTE FOR MAVEN USERS:
+
+  A pom file is included for building with Maven.  It requires the
+  browsermob proxy project to be built on your local machine (the proxy is
+  currently not in the Nexus central repo).  Instructions on how build the
+  proxy can be found on the browsermob-proxy github page:
+
+    https://github.com/lightbody/browsermob-proxy/
+
+========
+Examples
+========
+
+Each example builds on the previous.  It is easiest to follow along by
+examining one at a time.  Modify as needed to test your own site.
+
+To run a test case (for example TestClassName):
+
+Unix:
+
+  sh runtest.sh TestClassName
+
+Windows:
+
+  runtest.bat TestClassName
+
+
+This will compile and run the test case all in one go.
+
+The test cases are as follows:
+
+  BasicSelenium - Example of using Selenium in a UnitTest
+
+  PageLoadTime  - Selenium test with asserts for page load time
+
+  HarCapture    - Capture har, screenshot and error message and store to the
+                  'logs' directory.
+
+  Whitelist     - Example of whitelisting URLs to test the page load time
+                  excluding 3rd party content.
+
+  Bandwidth     - Example of setting the proxy bandwidth limit
+
+  UploadHAR     - Upload har, screenshot and error message to Harpoon

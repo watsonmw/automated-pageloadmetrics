@@ -1,0 +1,98 @@
+=======
+Install
+=======
+
+Online:
+
+  To install Python bindings for Selenium see:
+
+  http://code.google.com/p/selenium/wiki/PythonBindings
+
+  Basically:
+
+  > sudo easy_install selenium
+
+  Or "sudo pip selenium" if you use pip.
+
+Offline:
+
+Unix:
+
+  Local copies of the Selenium library and deps are included in the zip.
+  Install as follows:
+
+  > cd install
+  > sudo easy_install rdflib-3.1.0.tar.gz
+  > sudo easy_install distribute-0.6.19.tar.gz
+  > sudo easy_install selenium-2.0rc2.tar.tar.gz
+
+Windows:
+
+  If you don't have Python, you can install from here:
+
+     Install install\python-2.7.1.msi
+
+  You will need easy_install to install the Selenium bindings:
+
+     Install install\setuptools-0.6c11.win32-py2.7.exe
+
+  Installing Selenium:
+
+  Open a command prompt and install the following:
+  (repace <examples> with the directory you unziped to)
+
+  > cd C:\Python27\Scripts
+  > easy_install <examples>\python\install\rdflib-3.1.0.tar.gz
+  > easy_install <examples>\python\install\distribute-0.6.19.tar.gz
+  > easy_install <examples>\python\install\selenium-2.0rc2.tar.tar.gz
+
+  You may see errors when installing "distribute".  This is normal and
+  the install will still complete fine.
+
+
+========
+Examples
+========
+
+Each example builds on the previous.  It is easiest to follow along by
+examining one at a time.  Modify as needed to test your own site.
+
+  1-basic.py     - Basic selenium test.  Goes to google and searchs for cheese!
+
+  2-testcase.py  - Same test as above but using 'unittest' framework
+
+  3-timeout.py   - Adds a timeout to each page test
+
+At this point the rest of the examples use the BrowserMob proxy.  The examples
+connect to the BrowserMob proxy over HTTP and control it using the BrowserMob
+proxy REST API.
+
+To start the proxy:
+
+Unix:
+
+  > unzip browsermob-proxy-2.0.zip
+  > cd browsermob-proxy-2.0-SNAPSHOT
+  > sh bin/browsermob-proxy -p 9090
+
+Windows:
+
+  Extract browsermob-proxy-2.0.zip
+  From a command prompt:
+    > cd browsermob-proxy-2.0-SNAPSHOT
+    > bin/browsermob-proxy.bat -p 9090
+
+  4-proxy.py     - Makes REST API requests to the BrowserMob proxy.
+                   Starts a HTTP proxy on a new port and waits.
+                   Any traffic through this proxy will printed to standard
+                   out.
+
+  5-har.py       - Capture har, screenshot and error message and store to the
+                   'logs' directory.
+
+  6-whitelist.py - Example of whitelisting URLs to test the page load time
+                   excluding 3rd party content.
+
+  7-bandwidth.py - Example of setting the proxy bandwidth limit
+
+  8-upload.py    - Upload har, screenshot and error message to harpoon
