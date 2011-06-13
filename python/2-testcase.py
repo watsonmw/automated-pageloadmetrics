@@ -3,7 +3,7 @@ from selenium import webdriver
 
 class BrowserTest(unittest.TestCase):
     def setUp(self):
-        # Start FireFox before the test is ran
+        # Start FireFox before running the test
         self.driver = webdriver.Firefox()
 
     def tearDown(self):

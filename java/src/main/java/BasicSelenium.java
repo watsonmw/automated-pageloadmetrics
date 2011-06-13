@@ -14,5 +14,6 @@ public class BasicSelenium
         element.sendKeys("Cheese!");
         element.submit();
         timer.assertLessThen(18000);
+        driver.quit();
     }
 }

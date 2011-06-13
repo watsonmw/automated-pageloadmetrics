@@ -16,7 +16,8 @@ element = driver.find_element_by_name("q")
 element.send_keys("Cheese!")
 element.submit()
 
-# Wait for the page to load
+# Wait for the page AJAX to load.
+# Later examples show how to wait on an element (5-har.py).
 time.sleep(2.0)
 
 # Close the browser

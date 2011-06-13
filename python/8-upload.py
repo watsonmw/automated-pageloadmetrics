@@ -112,7 +112,7 @@ class WebDriverTest(unittest.TestCase):
         f.write(self._pretty_print(har))
         f.close
 
-        print "  Uploading har.."
+        print "  Uploading har..."
         self._harpoon_upload(har)
 
         self._proxy_request("DELETE", self.proxy_base_url)

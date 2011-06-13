@@ -62,7 +62,7 @@ class WebDriverTestHAR(unittest.TestCase):
         """Tell the proxy to start recording the HAR"""
         self._proxy_request("PUT", self.proxy_base_url + "/har?initialPageRef=" + self._testname());
 
-        """Create a new Firefox profile to attach to the proxy"""
+        """Create a new Firefox profile and set the proxy settings"""
         profile = webdriver.FirefoxProfile()
         profile.set_preference("network.proxy.http", "\"" + proxy_host + "\"")
         profile.set_preference("network.proxy.http_port", proxy_port)

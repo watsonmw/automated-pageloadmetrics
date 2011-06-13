@@ -58,7 +58,7 @@ Examples
 Each example builds on the previous.  It is easiest to follow along by
 examining one at a time.  Modify as needed to test your own site.
 
-  1-basic.py     - Basic selenium test.  Goes to google and searchs for cheese!
+  1-basic.py     - Basic selenium test.  Goes to google and searches for cheese!
 
   2-testcase.py  - Same test as above but using 'unittest' framework
 
@@ -72,21 +72,25 @@ To start the proxy:
 
 Unix:
 
-  > unzip browsermob-proxy-2.0.zip
+  > unzip install/browsermob-proxy-2.0.zip
   > cd browsermob-proxy-2.0-SNAPSHOT
   > sh bin/browsermob-proxy -p 9090
 
 Windows:
 
-  Extract browsermob-proxy-2.0.zip
+  Extract install/browsermob-proxy-2.0.zip
+
   From a command prompt:
     > cd browsermob-proxy-2.0-SNAPSHOT
     > bin/browsermob-proxy.bat -p 9090
 
   4-proxy.py     - Makes REST API requests to the BrowserMob proxy.
                    Starts a HTTP proxy on a new port and waits.
-                   Any traffic through this proxy will be printed to standard
-                   out.
+                   Any traffic through this proxy will be printed to the standard
+                   out.  You can launch a browser and change its proxy settings
+                   to point to the URL displayed when the example is run.
+                   Press any key when done navigating to a site to display the
+                   HAR.
 
   5-har.py       - Capture har and screenshot and store to the 'logs' directory.
 

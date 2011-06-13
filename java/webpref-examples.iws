@@ -20,34 +20,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints>
-      <breakpoint url="jar://$MAVEN_REPOSITORY$/org/browsermob/browsermob-proxy/2.0-SNAPSHOT/browsermob-proxy-2.0-SNAPSHOT-sources.jar!/org/browsermob/proxy/ProxyServer.java" line="100" class="org.browsermob.proxy.ProxyServer" package="org.browsermob.proxy">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/HarpoonTest.java" line="32" class="HarpoonTest$1" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -88,10 +60,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HarpoonTestRunner.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="HarpoonTestRunner.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/HarpoonTestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="68" selection-start="2673" selection-end="2673" vertical-scroll-proportion="0.0">
+            <state line="72" column="68" selection-start="2778" selection-end="2778" vertical-scroll-proportion="0.24041812">
               <folding />
             </state>
           </provider>
@@ -101,9 +73,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/UploadHAR.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="12" column="0" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,34 +81,51 @@
       <file leaf-file-name="CaptureHAR.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CaptureHAR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="14" column="13" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HarpoonTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Bandwidth.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Bandwidth.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="67" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Whitelist.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Whitelist.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="24" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicSelenium.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/BasicSelenium.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="0" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HarpoonTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/HarpoonTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="825" selection-end="825" vertical-scroll-proportion="0.33260393">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExternalResource.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.2/junit-4.8.2.jar!/org/junit/rules/ExternalResource.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="1" selection-start="618" selection-end="618" vertical-scroll-proportion="-6.72">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DesiredCapabilities.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.0b3/selenium-api-2.0b3-sources.jar!/org/openqa/selenium/remote/DesiredCapabilities.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="1529" selection-end="1529" vertical-scroll-proportion="0.0">
+            <state line="32" column="0" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -147,16 +134,7 @@
       <file leaf-file-name="ProxyServer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/browsermob/browsermob-proxy/2.0-SNAPSHOT/browsermob-proxy-2.0-SNAPSHOT-sources.jar!/org/browsermob/proxy/ProxyServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="0" selection-start="1718" selection-end="1718" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HarPageTimings.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/browsermob/browsermob-proxy/2.0-SNAPSHOT/browsermob-proxy-2.0-SNAPSHOT-sources.jar!/org/browsermob/core/har/HarPageTimings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="713" selection-end="713" vertical-scroll-proportion="0.0">
+            <state line="100" column="0" selection-start="2694" selection-end="2694" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -174,7 +152,7 @@
       <file leaf-file-name="BrowserMobHttpClient.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/browsermob/browsermob-proxy/2.0-SNAPSHOT/browsermob-proxy-2.0-SNAPSHOT-sources.jar!/org/browsermob/proxy/http/BrowserMobHttpClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="458" column="0" selection-start="18416" selection-end="18416" vertical-scroll-proportion="-3.1538463">
+            <state line="415" column="0" selection-start="16754" selection-end="16754" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -190,21 +168,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/PageLoadTime.java" />
-        <option value="$PROJECT_DIR$/src/main/HarpoonTest.java" />
         <option value="$PROJECT_DIR$/src/main/CaptureHAR.java" />
         <option value="$PROJECT_DIR$/src/main/Bandwidth.java" />
         <option value="$PROJECT_DIR$/src/main/Whitelist.java" />
         <option value="$PROJECT_DIR$/logs/1307906029/test_pageLoadTime.har" />
         <option value="$PROJECT_DIR$/src/main/java/PageLoadTimeTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Whitelist.java" />
         <option value="$PROJECT_DIR$/src/main/java/PageLoadTime.java" />
         <option value="$PROJECT_DIR$/src/main/java/Selenium.java" />
         <option value="$PROJECT_DIR$/src/main/java/BasicSeleniumTest.java" />
         <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/src/main/java/UploadHAR.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CaptureHAR.java" />
         <option value="$PROJECT_DIR$/src/main/java/HarpoonTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/BasicSelenium.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CaptureHAR.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Whitelist.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bandwidth.java" />
         <option value="$PROJECT_DIR$/src/main/java/HarpoonTestRunner.java" />
       </list>
     </option>
@@ -242,9 +220,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Favorites" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -307,48 +285,19 @@
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UploadHAR">
-    <configuration default="false" name="PageLoadTime" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" />
-      <module name="webpref-examples" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PageLoadTime" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="50393" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.Bandwidth">
     <configuration default="false" name="Whitelist" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" />
       <module name="webpref-examples" />
@@ -426,7 +375,13 @@
       </option>
       <envs />
       <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="59332" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -457,6 +412,33 @@
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Bandwidth" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" />
+      <module name="webpref-examples" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Bandwidth" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60679" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -544,11 +526,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.PageLoadTime" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Whitelist" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UploadHAR" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BasicSelenium" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CaptureHAR" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.Whitelist" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UploadHAR" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BasicSelenium" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CaptureHAR" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Bandwidth" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -605,9 +587,8 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55437666" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.55437666" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -616,11 +597,12 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24946082" sideWeight="0.6710875" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24946082" sideWeight="0.44562334" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -685,30 +667,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CaptureHAR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/browsermob/browsermob-proxy/2.0-SNAPSHOT/browsermob-proxy-2.0-SNAPSHOT-sources.jar!/org/browsermob/proxy/http/BrowserMobHttpClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="458" column="0" selection-start="18416" selection-end="18416" vertical-scroll-proportion="-3.1538463">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/browsermob/browsermob-proxy/2.0-SNAPSHOT/browsermob-proxy-2.0-SNAPSHOT-sources.jar!/org/browsermob/core/har/HarPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/harpoon/HarpoonTestResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="38" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0">
+        <state line="64" column="38" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.2/junit-4.8.2.jar!/org/junit/rules/ExternalResource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="1" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -720,35 +686,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/browsermob/browsermob-proxy/2.0-SNAPSHOT/browsermob-proxy-2.0-SNAPSHOT-sources.jar!/org/browsermob/core/har/HarPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BasicSelenium.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/UploadHAR.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/HarpoonTestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="68" selection-start="2673" selection-end="2673" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/browsermob/browsermob-proxy/2.0-SNAPSHOT/browsermob-proxy-2.0-SNAPSHOT-sources.jar!/org/browsermob/proxy/ProxyServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1718" selection-end="1718" vertical-scroll-proportion="0.0">
+        <state line="100" column="0" selection-start="2694" selection-end="2694" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.2/junit-4.8.2.jar!/org/junit/rules/ExternalResource.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Whitelist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="1" selection-start="618" selection-end="618" vertical-scroll-proportion="-6.72">
+        <state line="17" column="24" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/browsermob/browsermob-proxy/2.0-SNAPSHOT/browsermob-proxy-2.0-SNAPSHOT-sources.jar!/org/browsermob/proxy/http/BrowserMobHttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="415" column="0" selection-start="16754" selection-end="16754" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CaptureHAR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bandwidth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="67" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/HarpoonTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="825" selection-end="825" vertical-scroll-proportion="0.33260393">
+        <state line="32" column="0" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/HarpoonTestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="68" selection-start="2778" selection-end="2778" vertical-scroll-proportion="0.24041812">
           <folding />
         </state>
       </provider>
