@@ -48,7 +48,7 @@ Part 1: Selenium setup
 
 Part 2: Using the proxy to capture metrics
 
-  HarCapture    - Capture har, screenshot and error message and store to the
+  CaptureHAR    - Capture har, screenshot and error message and store to the
                   'logs' directory.
 
   Whitelist     - Example of whitelisting URLs to test the page load time
