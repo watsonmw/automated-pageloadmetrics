@@ -30,7 +30,7 @@ public abstract class HarpoonTest {
             caps.setCapability("proxy", proxy.seleniumProxy());
 
             driver = new FirefoxDriver(caps);
-            proxy.newHar(name.getMethodName());
+            proxy.newHar("Harpoon Test");
         }
 
         @Override

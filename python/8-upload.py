@@ -4,13 +4,14 @@ import os
 import time
 import sys
 import unittest
+from datetime import datetime
 from selenium import webdriver
 from selenium.common import exceptions
 
 proxy_host = "localhost"
 proxy_api_port = 9090
 
-harpoon_host = "localhost:8080"
+harpoon_host = "labs.webmetrics.com:8080"
 harpoon_url = "/test-results"
 
 class Timeout():
@@ -158,28 +159,34 @@ class WebDriverTest(unittest.TestCase):
     """
     Upload to HAR and test results to Harpoon
     """
-    def _harpoon_upload(self, har):
+    def _harpoon_upload(self, har_string):
+        har = json.loads(har_string)
+
+        # Use the first URL from the logs as the description
+        description = ""
+        try:
+            entries = har['log']['entries']
+            description = entries[0]['request']['url']
+        except:
+            pass
+
         conn = httplib.HTTPConnection(harpoon_host)
 
         headers = {
-            "Content-type": "application/x-www-form-urlencoded",
-            "Accept": "text/plain"
             }
 
         result = {
             'apiKey': None,
             'name': self._testname(),
-            'description': None,
-            'har': json.loads(har),
-            'created': time.time() * 1000
+            'description': description,
+            'har': har,
+            'created': int(time.time() * 1000)
             }
-
-        print self.e
 
         if self.e:
             result['error'] = {
                 'code': None,
-                'message': str(self.e),
+                'message': str(self.e[1]),
                 'file': None,
                 'line': None,
                 }
@@ -187,9 +194,9 @@ class WebDriverTest(unittest.TestCase):
         else:
             result['success'] = True
 
-        params = json.dumps(result)
+        body = json.dumps(result)
 
-        conn.request("POST", harpoon_url, params, headers)
+        conn.request("POST", harpoon_url, body, headers)
         response = conn.getresponse()
         print response.read()
         conn.close()

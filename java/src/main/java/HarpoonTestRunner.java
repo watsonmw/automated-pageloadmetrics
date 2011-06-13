@@ -70,7 +70,7 @@ public class HarpoonTestRunner extends BlockJUnit4ClassRunner {
         HttpClient httpclient = new DefaultHttpClient();
         httpclient.getParams().setParameter(CoreProtocolPNames.PROTOCOL_VERSION, HttpVersion.HTTP_1_1);
 
-        HttpPost httppost = new HttpPost("http://localhost:8080/test-results");
+        HttpPost httppost = new HttpPost("http://labs.webmetrics.com:8080/test-results");
 
         StringWriter stringWriter = new StringWriter();
         result.writeTo(stringWriter);
