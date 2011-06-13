@@ -6,7 +6,16 @@ import sys
 import unittest
 from selenium import webdriver
 
+"""
+class Timeout
+Prints execution times for blocks of code.
+Raises a timeout exception if the block took longer than the
+specified timeout in seconds to complete.
+"""
 class Timeout():
+    """
+    Takes a timeout in seconds and name to indentify the block
+    """
     def __init__(self, timeout, name):
         self.timeout = timeout
         self.name = name
@@ -14,6 +23,11 @@ class Timeout():
     def __enter__(self):
         self.start = time.time()
 
+    """
+    On block exit check that the block executed within the timeout.
+    If it did, print the time the block took to execute.
+    If it did not, raise a timeout exception.
+    """
     def __exit__(self, *args):
         runtime =  time.time() - self.start
         if (runtime > self.timeout):
@@ -24,7 +38,9 @@ class Timeout():
 
 class TimeoutTests(unittest.TestCase):
     """
-    The actual test
+    Navigate to google and search for Cheese!
+    The test is split into two steps.  Each step has a description
+    and a timeout.
     """
     def testSearch(self):
         with Timeout(10, "Navigate to google.com"):

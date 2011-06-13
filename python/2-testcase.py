@@ -3,9 +3,12 @@ from selenium import webdriver
 
 class BrowserTest(unittest.TestCase):
     def setUp(self):
+        # Start FireFox before the test is ran
         self.driver = webdriver.Firefox()
 
     def tearDown(self):
+        # Ensure the browser is closed after the test has run
+        # (even if the test failed)
         self.driver.quit()
 
     def testSearch(self):

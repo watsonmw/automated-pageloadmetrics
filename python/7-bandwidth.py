@@ -29,30 +29,18 @@ class Timeout():
 
 
 class WebDriverTest(unittest.TestCase):
-    def log_errors(func):
-        def wrapper(*arg):
-            that = arg[0]
-            that.e = None
-            try:
-              return func(*arg)
-            except:
-              that.e = sys.exc_info()
-              raise
-        return wrapper
-
     """
-    Test the page load time
+    Load the page normally
     """
-    @log_errors
     def test_PageLoad(self):
         with Timeout(30, "Navigate to webmetrics.com"):
             self.driver.get("http://www.webmetrics.com")
 
     """
-    Test the page load time with a bandwidth limit
+    Load the page with a bandwidth limits
     """
-    @log_errors
     def test_PageLoadLimitBandwidth(self):
+        """Tell the proxy to limit upstream and downstream bandwidth"""
         self._proxy_request("PUT", self.proxy_base_url +
             "/limit?upstreamKbps=20&downstreamKbps=30")
 
@@ -90,19 +78,13 @@ class WebDriverTest(unittest.TestCase):
         print "Saving results to " + logs_dir
         base_file = logs_dir + self._testname()
 
-        if (self.e):
-            print "  Saving error message..."
-            f = open(base_file + ".txt", 'w')
-            f.write(str(self.e))
-            f.close
-
         print "  Saving screenshot..." 
         self.driver.save_screenshot(base_file + ".png")
         self.driver.quit()
-        har = self._proxy_request("GET", self.proxy_base_url + "/har")
-        har_file =  base_file + '.har'
 
         print "  Saving har..."
+        har = self._proxy_request("GET", self.proxy_base_url + "/har")
+        har_file =  base_file + '.har'
         f = open(har_file, 'w')
         f.write(har)
         f.close

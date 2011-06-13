@@ -14,7 +14,6 @@ Send REST API request to the BrowserMob Proxy
 The proxy must be running and available on the above port
 for it to receive the API calls!  See the README in the
 same directory as this file for details.
-
 """
 def _proxy_request(http_request_type, url):
     conn = httplib.HTTPConnection(proxy_host, proxy_api_port)

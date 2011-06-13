@@ -29,30 +29,18 @@ class Timeout():
 
 
 class WebDriverTest(unittest.TestCase):
-    def log_except(func):
-        def wrapper(*arg):
-            that = arg[0]
-            that.e = None
-            try:
-              return func(*arg)
-            except:
-              that.e = sys.exc_info()
-              raise
-        return wrapper
-
     """
-    Test the page load time
+    Load the page and record the time it took
     """
-    @log_except
     def test_PageLoad(self):
         with Timeout(30, "Navigate to webmetrics.com"):
             self.driver.get("http://www.webmetrics.com")
 
     """
-    Test the page load time without 3rd party content
+    Now load the page without 3rd party content
     """
-    @log_except
     def test_PageLoadNoThirdPartyContent(self):
+        """Tell the proxy to only allow requests to webmetrics.com"""
         self._proxy_request("PUT", self.proxy_base_url +
             "/whitelist?regex=.*webmetrics\\.com.*")
 
@@ -90,19 +78,15 @@ class WebDriverTest(unittest.TestCase):
         print "Saving results to " + logs_dir
         base_file = logs_dir + self._testname()
 
-        if (self.e):
-            print "  Saving error message..."
-            f = open(base_file + ".txt", 'w')
-            f.write(str(self.e))
-            f.close
-
-        print "  Saving screenshot..." 
+        print "  Saving screenshot..."
         self.driver.save_screenshot(base_file + ".png")
+
         self.driver.quit()
+
+        print "  Saving har..."
         har = self._proxy_request("GET", self.proxy_base_url + "/har")
         har_file =  base_file + '.har'
 
-        print "  Saving har..."
         f = open(har_file, 'w')
         f.write(self._pretty_print(har))
         f.close

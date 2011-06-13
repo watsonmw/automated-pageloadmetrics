@@ -27,33 +27,22 @@ class Timeout():
             print '"{0}" took {1} seconds'.format(self.name , runtime)
 
 
-class WebDriverTest(unittest.TestCase):
-    def log_errors(func):
-        def wrapper(*arg):
-            that = arg[0]
-            that.e = None
-            try:
-              return func(*arg)
-            except:
-              that.e = sys.exc_info()
-              raise
-        return wrapper
-
+class WebDriverTestHAR(unittest.TestCase):
     """
     Search for "Cheese!" and wait for the results to load!
+    A HAR file is automatically saved off.
     """
-    @log_errors
     def testSearch(self):
         with Timeout(10, "Navigate to google.com"):
             self.driver.get("http://www.google.com")
 
-        find_cheese = lambda: self.driver.find_element_by_link_text("Cheese - Wikipedia, the free encyclopedia")
         cheese = None
 
         with Timeout(10, "Search for cheese!"):
             element = self.driver.find_element_by_name("q")
             element.send_keys("Cheese!")
             element.submit()
+            find_cheese = lambda: self.driver.find_element_by_link_text("Cheese - Wikipedia, the free encyclopedia")
             cheese = self.wait_for(find_cheese, 10)
 
         with Timeout(10, "Click the wikipedia link!"):
@@ -65,13 +54,15 @@ class WebDriverTest(unittest.TestCase):
      - Bring up FireFox on that port
     """
     def setUp(self):
+        """Start a new proxy port"""
         data = json.loads(self._proxy_request("POST", "/proxy"))
         proxy_port = data['port']
         self.proxy_base_url = "/proxy/" + str(proxy_port)
 
+        """Tell the proxy to start recording the HAR"""
         self._proxy_request("PUT", self.proxy_base_url + "/har?initialPageRef=" + self._testname());
 
-        """Setup the firefox profile to attach to the proxy"""
+        """Create a new Firefox profile to attach to the proxy"""
         profile = webdriver.FirefoxProfile()
         profile.set_preference("network.proxy.http", "\"" + proxy_host + "\"")
         profile.set_preference("network.proxy.http_port", proxy_port)
@@ -91,19 +82,13 @@ class WebDriverTest(unittest.TestCase):
         print "Saving results to " + dir
         base_file = dir + self._testname()
 
-        if (self.e):
-            print "  Saving error message..."
-            f = open(base_file + ".txt", 'w')
-            f.write(str(self.e))
-            f.close
-
         print "  Saving screenshot..." 
         self.driver.save_screenshot(base_file + ".png")
         self.driver.quit()
-        har = self._proxy_request("GET", self.proxy_base_url + "/har")
-        har_file =  base_file + '.har'
 
         print "  Saving har..."
+        har = self._proxy_request("GET", self.proxy_base_url + "/har")
+        har_file =  base_file + '.har'
         f = open(har_file, 'w')
         f.write(self._pretty_print(har))
         f.close

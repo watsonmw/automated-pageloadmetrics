@@ -4,7 +4,7 @@ Install
 
 - Install Java SDK 1.6
 
-- All library/jars used in the examples are included in the 'jars' directory.
+- All jars used in the examples are included in the 'jars' directory.
 
 - The examples can be ran from 'runtest.sh' on Unix and 'runtest.bat' on
   Windows.
@@ -40,9 +40,13 @@ This will compile and run the test case all in one go.
 
 The test cases are as follows:
 
-  BasicSelenium - Example of using Selenium in a UnitTest
+Part 1: Selenium setup
 
-  PageLoadTime  - Selenium test with asserts for page load time
+  BasicSelenium - Example of using Selenium in a JUnit test
+
+  PageLoadTime  - Selenium test with asserts for page load times.
+
+Part 2: Using the proxy to capture metrics
 
   HarCapture    - Capture har, screenshot and error message and store to the
                   'logs' directory.

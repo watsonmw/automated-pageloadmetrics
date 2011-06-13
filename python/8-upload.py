@@ -24,8 +24,10 @@ class Timeout():
     def __exit__(self, *args):
         runtime =  time.time() - self.start
         if (runtime > self.timeout):
-            msg = '"{0}" exceeded timeout of {1} seconds'.format(self.name , self.timeout)
-            raise Exception(msg)
+            msg = '"{0}" took {1} seconds exceeding timeout of {2} seconds'
+            raise Exception(msg.format(self.name , runtime, self.timeout))
+        else:
+            print '"{0}" took {1} seconds'.format(self.name , runtime)
 
 class WebDriverTest(unittest.TestCase):
     def log_errors(func):
@@ -40,20 +42,20 @@ class WebDriverTest(unittest.TestCase):
         return wrapper
 
     """
-    The actual test
+    Go to google and search for cheese!
     """
     @log_errors
     def testSearch(self):
         with Timeout(10, "Navigate to google.com"):
             self.driver.get("http://www.google.com")
 
-        find_cheese = lambda: self.driver.find_element_by_link_text("Cheese - Wikipedia, the free encyclopedia")
         cheese = None
 
         with Timeout(10, "Search for cheese!"):
             element = self.driver.find_element_by_name("q")
             element.send_keys("Cheese!")
             element.submit()
+            find_cheese = lambda: self.driver.find_element_by_link_text("Cheese - Wikipedia, the free encyclopedia")
             cheese = self.wait_for(find_cheese, 10)
 
         with Timeout(10, "Click the wikipedia link!"):
@@ -99,11 +101,12 @@ class WebDriverTest(unittest.TestCase):
 
         print "  Saving screenshot..." 
         self.driver.save_screenshot(base_file + ".png")
+
         self.driver.quit()
-        har = self._proxy_request("GET", self.proxy_base_url + "/har")
-        har_file =  base_file + '.har'
 
         print "  Saving har..."
+        har = self._proxy_request("GET", self.proxy_base_url + "/har")
+        har_file =  base_file + '.har'
         f = open(har_file, 'w')
         f.write(self._pretty_print(har))
         f.close
