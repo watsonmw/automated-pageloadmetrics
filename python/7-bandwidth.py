@@ -51,7 +51,7 @@ class WebDriverTest(unittest.TestCase):
     """
     Test the page load time with a bandwidth limit
     """
-    @log_except
+    @log_errors
     def test_PageLoadLimitBandwidth(self):
         self._proxy_request("PUT", self.proxy_base_url +
             "/limit?upstreamKbps=20&downstreamKbps=30")

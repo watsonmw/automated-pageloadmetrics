@@ -14,6 +14,5 @@ class BrowserTest(unittest.TestCase):
         element.send_keys("Cheese!")
         element.submit()
 
-
 if __name__ == "__main__":
     unittest.main()

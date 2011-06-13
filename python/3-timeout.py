@@ -27,16 +27,19 @@ class TimeoutTests(unittest.TestCase):
     The actual test
     """
     def testSearch(self):
-        driver = webdriver.Firefox()
         with Timeout(10, "Navigate to google.com"):
-            driver.get("http://www.google.com")
+            self.driver.get("http://www.google.com")
 
         with Timeout(10, "Search for cheese!"):
-            element = driver.find_element_by_name("q")
+            element = self.driver.find_element_by_name("q")
             element.send_keys("Cheese!")
             element.submit()
 
-        driver.close()
+    def setUp(self):
+        self.driver = webdriver.Firefox()
+
+    def tearDown(self):
+        self.driver.quit()
 
 if __name__ == "__main__":
     unittest.main()
